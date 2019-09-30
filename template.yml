@@ -5,19 +5,6 @@ allow-lan: false
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
-secret: ""
-dns:
-  enable: true
-  ipv6: false
-  nameserver:
-    - 1.2.4.8
-    - 114.114.114.114
-    - 223.5.5.5
-    - tls://dns.rubyfish.cn:853
-  fallback:
-    - tls://dns.rubyfish.cn:853
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
 Proxy: []
 Proxy Group:
   - name: Proxy
@@ -26,7 +13,6 @@ Proxy Group:
 Rule:
   - DOMAIN-SUFFIX,cn,DIRECT
   - DOMAIN-KEYWORD,-cn,DIRECT
-
   - DOMAIN-SUFFIX,126.com,DIRECT
   - DOMAIN-SUFFIX,126.net,DIRECT
   - DOMAIN-SUFFIX,127.net,DIRECT
