@@ -1,7 +1,7 @@
 port: 1087
 socks-port: 1080
 redir-port: 7892
-allow-lan: false
+allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
